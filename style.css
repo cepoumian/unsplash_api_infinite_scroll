@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
 
 
 html {
@@ -7,16 +7,35 @@ html {
 
 body {
   margin: 0;
-  font-family: 'Fugaz One', cursive;
-  background-color: whitesmoke;
+  font-family: 'Bangers', cursive;
+  background-color: #fff;
+}
+
+.title-container {
+}
+
+.text-box {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 h1 {
+  display: block;
+  background-color: #000;
+  color: #fff;
   text-align: center;
-  margin-top: 25px;
-  margin-bottom: 15px;
-  font-size: 40px;
+  font-size: 5vw;
   letter-spacing: 5px;
+  padding: .5em;
+}
+
+h1:nth-child(2) {
+  position: absolute;
+  background-color: #fff;
+  color: #000;
+  clip-path: inset( -1% -1% 50% -1%);
 }
 
 /* Loader */
@@ -50,7 +69,7 @@ h1 {
 /* Media Query: Large Smartphone (less than 600px) */
 @media screen and (max-width: 600px) {
   h1 {
-    font-size: 32px;
+    font-size: 5vw;
   }
 
   .image-container {
